@@ -1,0 +1,49 @@
+<div class="card p-3 mt-3">
+    <form class="row g-3 needs-validation" novalidate [formGroup]="form">
+        <div class="col-sm-12">
+            <label for="nome" class="form-label">Nome da empresa</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="Nome da empresa" formControlName="nome">
+            <div class="invalid-feedback">
+                Informe o nome da empresa!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="cpf" class="form-label">Cnpj da empresa</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="Cpf de cliente" formControlName="cnpj">
+            <div class="invalid-feedback">
+                Informe o cnpj da empresa!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="endereco" class="form-label">endereco da empresa</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="endereco da empresa" formControlName="endereco">
+            <div class="invalid-feedback">
+                Informe o endereco da empresa!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="rg" class="form-label">Socios </label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="Socios" formControlName="socios">
+            <div class="invalid-feedback">
+                Informe os socios de empresa !!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="email" class="form-label">Faturamento</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="faturamento" formControlName="emaik">
+            <div class="invalid-feedback">
+                Informe o faturamento!!!
+            </div>
+        </div>
+
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn btn-primary me-2" type="submit" (click)="Salvar()">Salvar</button>
+            <button class="btn btn-danger" type="submit" (click)="Cancelar()">Cancelar</button>
+        </div>
+    </form>
+</div>
